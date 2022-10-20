@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "descendre",
+  "version": "${version}",
+  "name": "Descendre",
+  "description": "A mod which adds a special dismount key. Mod request by vos6434",
+  "authors": [
+    "Sascha_T"
+  ],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/demonter/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.saschat.descendre.DescendreClient"
+    ]
+  },
+  "mixins": [
+    "descendre.mixins.json"
+  ],
+  "depends": {
+    "fabric-key-binding-api-v1": "*",
+    "minecraft": ">=1.19"
+  }
+}
